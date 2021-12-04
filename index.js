@@ -150,8 +150,8 @@ const {
 } = require('./functions/welcome');
 
 const { msgFilter } = require('./functions/antispam')
-const { menu, menuVn } = require('./functions/menu'); // tampilan menu dalam functions/menu
-const { ind, eng, jv, snd, ar, prtgs } = require('./language/index');
+const { menu, menuVn } = require('./functions/menu'); 
+const { espa, ind, eng, port } = require('./language/index');
 
 // funciones de  ./functions/setting-bot
 let ownerNumber = st.ownerNumber;

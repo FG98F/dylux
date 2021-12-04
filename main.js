@@ -26,7 +26,7 @@ async function starts() {
 	console.log(color('[QR]','white'), color('Escanee el codigo QR para conectarse'));
 	});
 
-	fs.existsSync('./whatsapp/sessions.json') && Fg.loadAuthInfo('./whatsapp/sessions.json');
+	fs.existsSync('./whatsapp/session.json') && Fg.loadAuthInfo('./whatsapp/session.json');
 	
 	await Fg.connect({timeoutMs: 30*1000});
   fs.writeFileSync('./whatsapp/session.json', JSON.stringify(Fg.base64EncodedAuthInfo(), null, '\t'));
