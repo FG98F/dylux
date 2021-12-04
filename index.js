@@ -150,7 +150,7 @@ const {
 } = require('./functions/welcome');
 
 const { msgFilter } = require('./functions/antispam')
-const { menu, menuVn } = require('./functions/menu'); 
+const { menu, menuVC } = require('./functions/menu'); 
 const { espa, ind, eng, port } = require('./language/index');
 
 // funciones de  ./functions/setting-bot
