@@ -84,6 +84,18 @@ exports.pvfo = `Pilih video yang ingin Anda unduh`;
 exports.titlp = `Kualifikasi`;
 exports.timp = `Durasi`;
 exports.viep = `Tampilan`;
+exports.vcnrst = 'Tidak terdeteksi';
+exports.vclect = 'Membaca suara';
+exports.listwb = 'daftar acara';
+exports.pregt = 'Dia mencintaiku?';
+exports.donate = `≡ *SUMBANGAN*
+Anda dapat menyumbang jika Anda ingin membantu menjaga bot tetap aktif
+
+▢ *PayPal*
+• *Link :* https://tinyurl.com/PayPal-fg
+
+_Dengan berdonasi Anda mendapatkan_  *Premium* `;
+exports.cretb = 'Buat bot Anda sendiri menggunakan Termux';
 
 // -- Saying time
 exports.night = 'Selamat Malam';

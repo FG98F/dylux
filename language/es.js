@@ -84,6 +84,18 @@ exports.pvfo = `Seleccione el video que desea descargar`;
 exports.titlp = `Título`;
 exports.timp = `Duración`;
 exports.viep = `Vistas`;
+exports.vcnrst = 'No detectado';
+exports.vclect = 'Lectura de voz';
+exports.listwb = 'Lista de eventos';
+exports.pregt = 'Ella me ama?';
+exports.donate = `≡ *DONACION*
+puedes donar si quieres ayudar a mantener el bot activo
+
+▢ *PayPal*
+• *Link :* https://tinyurl.com/PayPal-fg
+
+_Al donar consigues_  *Premium* `;
+exports.cretb = 'Crea tu propio bot usando Termux';
 
 // -- Decir tiempo
 exports.night = 'Buenas noches'

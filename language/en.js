@@ -84,6 +84,18 @@ exports.pvfo = `Select the video you want to download`;
 exports.titlp = `Title`;
 exports.timp = `Duration`;
 exports.viep = `Views`;
+exports.vcnrst = 'Not detected';
+exports.vclect = 'Voice reading';
+exports.listwb = 'Event list';
+exports.pregt = 'She Loves Me?';
+exports.donate = `≡ *DONATION*
+you can donate if you want to help keep the bot active
+
+▢ *PayPal*
+• *Link :* https://tinyurl.com/PayPal-fg
+
+_By donating you get_  *Premium* `;
+exports.cretb = 'Create your own bot using Termux';
 
 // -- Saying time
 exports.night = 'Good night'
