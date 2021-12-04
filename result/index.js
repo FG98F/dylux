@@ -51,7 +51,6 @@ const hacker = () => {
 const { pinterest } = require('./download/pinterest_img');
 const { igDl } = require('./download/instagramPost_dl');
 const { Ttdl } = require('./download/tiktokPost_dl');
-const { joox } = require('./download/jooxDl');
 const { yta, ytv } = require('./download/yt_download');
 // -- result search
 const { playstore } = require('./search/playstore');
@@ -82,7 +81,6 @@ module.exports = {
   RandomCerpen,
   igDl,
   Ttdl,
-  joox,
   yta,
   ytv,
   ArtiMimpi,
