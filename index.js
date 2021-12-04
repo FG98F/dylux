@@ -445,19 +445,37 @@ if (isBanned) return; // los usuarios con estado baneado no podrán usar el coma
 
 switch (command) { 
  
-  case 'menu': 
+ case 'menu': 
  case 'help':
     capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
     
-▷ *${msg.lvl}* : ${isLevel}
-▷ *Premium* : ${prem}
+⎔ *${msg.lvl}* : ${isLevel}
+⎔ *Premium* : ${prem}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, `⦙☰ Menu Vc`, `${prefix}menuvc`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`)
     break
+    
+    case 'menuvc': 
+ case 'helpvc':
+    capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
+    
+${msg.hi} *${pushname}* ${ucapanWaktu}
+    
+⎔ *${msg.lvl}* : ${isLevel}
+⎔ *Premium* : ${prem}
+
+▢ ${msg.cretb}
+• https://youtu.be/F4lGWb1WXgM
+${readMore}
+*VOICE COMMAND* ${msg.vnCmd(prefix)} 
+${menuVC(prefix)} 
+`
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
+    break 
     
     case 'grupos': 
     case 'groups': 
@@ -482,13 +500,7 @@ break
 
 case 'donate':
 case 'donar':
- m.reply(`≡ *DONACION*
-puedes donar si quieres ayudar a mantener el bot activo
-
-▢ *PayPal*
-• *Link :* https://tinyurl.com/PayPal-fg
-
-_Al donar consigues_  *Premium* `) 
+ m.reply(msg.donate) 
 break
  
   case 'ping':
@@ -565,7 +577,7 @@ number = '59172945992@s.whatsapp.net'
 
 
 *≡ DISPOSITIVO*
-▢ Batería : ${baterai.baterai}% ${baterai.cas === 'true' ? 'Cargando' : 'Desconectado'}
+
 ▢ Versi Wa : ${Fg.user.phone.wa_version}
 
 *≡ OWNER*
@@ -606,7 +618,7 @@ Fg.send2Button(from, teks, '*_© FG98 DyLux_*', `ꨄ︎ Apoyar`, `${prefix}donat
       hasil = fgx.reto()
       }
     capt = `‣ *${command.toUpperCase()}* \n\n${hasil}`
-    Fg.sendButton(from, capt, msg.next(command), `▷▷ ${msg.next2}`, prefix+command)
+    Fg.send2Button(from, capt, msg.foll, `VERDAD`, `${prefix}verdad`, `RETO`, `${prefix}reto`)
     break
     
     case 'fake':
@@ -619,7 +631,8 @@ Fg.send2Button(from, teks, '*_© FG98 DyLux_*', `ꨄ︎ Apoyar`, `${prefix}donat
     break
   
 case 'pregunta':
-if(!value) return m.reply(msg.notext)
+case 'preg':
+if(!value) return m.reply(`📌 *${msg.exple} :*\n *${prefix + command} ${msg.pregt}`)
 prefg = await fetchJson(`https://api.simsimi.net/v2/?text=${value}&lc=${cekBahasa(who)}`, {method: 'get'})
  m.reply(`≡ *PREGUNTAS*
  
@@ -1845,7 +1858,7 @@ ${msg.rzon} : ${Fg.vote[from][3]}
 ✅ : ${vote.length} *Total*
 ${listVote}
 
-❎ : ${devote.length} *Total*
+❌ : ${devote.length} *Total*
 ${listDevote}`.trim()
     await Fg.send3Button(from, caption, `${msg.foll}`, '✅', `${prefix}yes`, '❌', `${prefix}no`, `📈 ${msg.vrvt}`, `${prefix}checkvote`, false, { contextInfo: { mentionedJid: Fg.parseMention(caption) } })
     break
@@ -1993,7 +2006,7 @@ case 'delwelcome':
  case 'simular':
    if(!isGroup) return m.reply(msg.group)
    if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
-   if(!value) return m.reply('Lista de eventos\n\n- Welcome\n-Bye')
+   if(!value) return m.reply(`${msg.listwb}\n\n▢ Welcome\n▢ Bye`)
    welc = getCustomWelcome(from)
    bye = getCustomBye(from)
    tag = '@'+sender.split('@')[0]
@@ -2020,9 +2033,9 @@ Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagra
 	      } 
 	    });//---
      } else {
-       m.reply('Lista de eventos\n\n- Welcome\n- Bye')
+       m.reply(`${msg.listwb}\n\n▢ Welcome\n▢ Bye`)
      }
-  break
+  break 
 
   
   case 'attp':
@@ -2164,8 +2177,8 @@ if (isVoiceCommand && type === "audioMessage"){
     form.append('audio', stream);
     const UrL = await fetch('http://hujanapi.xyz/api/stt?apikey=' + hujanapi, { method: 'POST', body: form })
     const ret =  await UrL.json()
-    const voiceMsg = ret.result ? ret.result : 'No detectado'
-    m.reply('🎙️ Lectura de voz : ' + voiceMsg)
+    const voiceMsg = ret.result ? ret.result : `${msg.vcnrst}`
+    m.reply(`🎙️ ${msg.vclect} : ${voiceMsg}`)
     const VoiceCommand = voiceMsg.trim().split(/ +/).shift().toLowerCase();
     const argsVn = voiceMsg.trim().split(/ +/).slice(1);
     const valueVn = argsVn.join(' ');
@@ -2177,7 +2190,7 @@ if (isVoiceCommand && type === "audioMessage"){
 */
 switch(VoiceCommand) {
   
-      case 'menu': 
+ case 'menu': 
  case 'help':
     capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
     
@@ -2188,7 +2201,7 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⦙☰ Menu Vc`, `${prefix}menuvc`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, `⦙☰ Menu Vc`, `${prefix}menuvc`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`)
     break
   
   case 'google':
@@ -2198,7 +2211,7 @@ ${menu(prefix)}
    msg = way.map(({ title, link, snippet}) => {
     return `*${title}*\n${link}\n${snippet}`
   }).join`\n\n`
-   await Fg.adReply(from, msg, text, 'GOOGLE SEARCH : ' + value, tanggal, thumb, linkIg)
+   await Fg.adReply(from, msg, text, 'BÚSQUEDA DE GOOGLE : ' + value, tanggal, thumb, linkIg)
    break
 
   case 'play': 
