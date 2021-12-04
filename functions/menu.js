@@ -1,6 +1,5 @@
 exports.menu = (v) => {
-  return `
-┌─⊷ *MAIN* 
+  return `┌─⊷ *MAIN* 
 ▢ ${v}menuvc
 ▢ ${v}bot <text>
 ▢ ${v}info
