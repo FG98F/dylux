@@ -565,7 +565,7 @@ number = '59172945992@s.whatsapp.net'
 
 
 *≡ DISPOSITIVO*
-
+▢ Batería : ${baterai.baterai}% ${baterai.cas === 'true' ? 'Cargando' : 'Desconectado'}
 ▢ Versi Wa : ${Fg.user.phone.wa_version}
 
 *≡ OWNER*
