@@ -133,7 +133,7 @@ const {
   addAuthor,
   addPackname,
   addWm,
-  addGamewaktu,
+  addgameTime,
   addPoingame,
   addCmd
 } = require('./functions/setting-bot'); 
@@ -156,7 +156,7 @@ const { espa, ind, eng, port } = require('./language/index');
 // funciones de  ./functions/setting-bot
 let ownerNumber = st.ownerNumber;
 let isPoingame = st.poinGame; 
-let isGamewaktu = st.gameWaktu;
+let isgameTime = st.gameTime;
 let isPoinawal = st.poinAwal;
 let isNama = st.nama; 
 let isAuthor = st.author; 
@@ -1874,8 +1874,8 @@ ${listDevote}`.trim()
     await Fg.sendButton(from, caption, `${msg.foll}`, `🚫 ${msg.dlte}`, `${prefix}delvote`, false, { contextInfo: { mentionedJid: Fg.parseMention(caption) } })
 break
 
-case 'riddle':  //acertijo
- Fg.game = Fg.game ? Fg.game : {}
+case 'riddle':
+      Fg.game = Fg.game ? Fg.game : {}
     if (from in Fg.game) {
         Fg.reply(from, msg.onGame, Fg.game[from][0])
         return false
@@ -1884,18 +1884,18 @@ case 'riddle':  //acertijo
         list = JSON.parse(data);
         random = Math.floor(Math.random() * list.length);
         json = list[random]
-        caption = msg.soal(json.soal, (isGametime / 1000).toFixed(2), isPoingame).trim()
+        caption = msg.soal(json.soal, (isgameTime / 1000).toFixed(2), isPoingame).trim()
     Fg.game[from] = [
         await Fg.reply(from, caption, m),
-        json.jawaban, 
+        json.jawaban,
         setTimeout(() => {
-          capt = Fg.game[from][1].replace(/[aiueoAIUEO]/gi, '_')
+          capt = Fg.game[from][1].replace(/[aiueoAIUEO]/gi, '▢')
           m.reply("*Pista*\n"+capt.toUpperCase())
-        }, isGametime - 10000),
+        }, isgameTime - 10000),
         setTimeout(() => {
            Fg.reply(from, msg.timeout + Fg.game[from][1].toUpperCase(), Fg.game[from][0])
             delete Fg.game[from]
-        }, isGametime)
+        }, isgameTime)
     ]
  break
  
