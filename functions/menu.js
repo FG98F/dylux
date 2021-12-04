@@ -1,7 +1,7 @@
 exports.menu = (v) => {
   return `
 ┌─⊷ *MAIN* 
-▢ ${v}chatbot on/off
+▢ ${v}menuvc
 ▢ ${v}bot <text>
 ▢ ${v}info
 ▢ ${v}language
@@ -11,11 +11,13 @@ exports.menu = (v) => {
 ▢ ${v}report <text>
 ▢ ${v}listprem
 ▢ ${v}listban
+▢ ${v}chatbot on/off
+▢ ${v}voicecmd on/off
 └─────────────
 ≡ List Menu
 ┌─⊷ *FUN* 
 ▢ ${v}fake text|@user|text
-▢ ${v}pregunta
+▢ ${v}preg
 └─────────────
 ┌─⊷ *GAMES* 
 ▢ ${v}verdad
@@ -36,7 +38,7 @@ exports.menu = (v) => {
 ▢ ${v}wallpaper
 └─────────────
 ┌─⊷ *TOOLS*
-├ ${v}afk <razon>
+▢ ${v}afk <razon>
 ▢ ${v}fakethumb
 ▢ ${v}tomp3
 ▢ ${v}toav
@@ -136,9 +138,12 @@ exports.menu = (v) => {
 └─────────────`;
 };
 
-exports.menuVN = `
+exports.menuVC = `
 ┌─⊷ *MAIN* 
 ▢ menu
+└─────────────
+┌─⊷ *BUSQUEDA*
+▢ google
 └─────────────
 ┌─⊷ *DOWNLOAD* 
 ▢ play
