@@ -453,6 +453,9 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
     
 ⎔ *${msg.lvl}* : ${isLevel}
 ⎔ *Premium* : ${prem}
+
+▢ ${msg.cretb}
+• https://youtu.be/F4lGWb1WXgM 
 ${readMore}
 ${menu(prefix)} 
 `
@@ -467,9 +470,6 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
     
 ⎔ *${msg.lvl}* : ${isLevel}
 ⎔ *Premium* : ${prem}
-
-▢ ${msg.cretb}
-• https://youtu.be/F4lGWb1WXgM
 ${readMore}
 *VOICE COMMAND* ${msg.vnCmd(prefix)} 
 ${menuVC(prefix)} 
