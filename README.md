@@ -69,7 +69,8 @@ Cuando aparezca el QR, escanéelo usando la aplicación WhatsApp que se usará p
 
 ### Características
 
-- [x] Multi lenguaje 
+- [x] Multi lenguaje
+- [x] Comandos de voz 
 - [x] Configuración de grupo
 - [x] Antidelete, Antiviewonce, & Detect
 - [x] Bienvenida personalizada a cada grupo
