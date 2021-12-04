@@ -633,7 +633,7 @@ Fg.send2Button(from, teks, '*_© FG98 DyLux_*', `ꨄ︎ Apoyar`, `${prefix}donat
   
 case 'pregunta':
 case 'preg':
-if(!value) return m.reply(`📌 *${msg.exple} :*\n *${prefix + command} ${msg.pregt}`)
+if(!value) return m.reply(`📌 *${msg.exple} :*\n *${prefix + command}* ${msg.pregt}`)
 prefg = await fetchJson(`https://api.simsimi.net/v2/?text=${value}&lc=${cekBahasa(who)}`, {method: 'get'})
  m.reply(`≡ *PREGUNTAS*
  
@@ -2199,6 +2199,10 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
     
 ⎔ *${msg.lvl}* : ${isLevel}
 ⎔ *Premium* : ${prem}
+
+▢ ${msg.cretb}
+• https://youtu.be/F4lGWb1WXgM 
+
 ${readMore}
 ${menu(prefix)} 
 `
