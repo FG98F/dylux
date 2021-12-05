@@ -14,9 +14,7 @@
 <a href="https://github.com/FG98F/dylux-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/FG98F/dylux-bot?label=Watching&style=social"></a>
 <a href="https://github.com/FG98F/dylux-bot/watchers"><img title="Contributor" src="https://img.shields.io/github/contributors/FG98F/dylux-bot?logo=github&style=social"></a>
 </p>
-<p align="center">
-<a href="https://github.com/FG98F/dylux-bo"><img src="https://img.shields.io/github/repo-size/FG98F/dylux-bot?label=Peso%20repositorio&style=plastic"></a>
-</p>
+
 
 
 <h3 align="center">WHATSAPP BOT</h3>
