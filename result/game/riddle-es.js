@@ -15,18 +15,13 @@
     "jawaban": "Amazon"
   },
   { "author" : "FG98",
-    "index": 4,
-    "soal": "Como se llama el creador de DyLux Bot?",
-    "jawaban": "FG98"
-  },
-  { "author" : "FG98",
-    "index": 5,
+    "index": 6,
     "soal": "¿El nombre de la película que cuenta la historia de un robot que puede convertirse en vehículo?",
     "jawaban": "Transformers"
   },
   { "author" : "FG98",
-    "index": 6,
+    "index": 7,
     "soal": "¿El nombre del lujoso barco de pasajeros que se hundió durante su viaje inaugural en 1912?",
     "jawaban": "Titanic"
-  },
+  }
 ] 
