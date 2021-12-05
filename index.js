@@ -1894,7 +1894,7 @@ case 'riddle':
         Fg.reply(from, msg.onGame, Fg.game[from][0])
         return false
         } 
-        data = fs.readFileSync(`./result/game/${command}.js`);
+        data = fs.readFileSync(`./result/game/${command}-es.js`);
         list = JSON.parse(data);
         random = Math.floor(Math.random() * list.length);
         json = list[random]
@@ -1903,7 +1903,7 @@ case 'riddle':
         await Fg.reply(from, caption, m),
         json.jawaban,
         setTimeout(() => {
-          capt = Fg.game[from][1].replace(/[aiueoAIUEO]/gi, '▢')
+          capt = Fg.game[from][1].replace(/[aiueoAIUEO]/gi, '_')
           m.reply("*Pista*\n"+capt.toUpperCase())
         }, isgameTime - 10000),
         setTimeout(() => {
