@@ -22,6 +22,7 @@ exports.menu = (v) => {
 ▢ ${v}verdad
 ▢ ${v}reto
 ▢ ${v}ppt
+▢ ${v}slot
 └─────────────
 ┌─⊷ *STICKER* 
 ▢ ${v}sticker <nombre>|<autor>
