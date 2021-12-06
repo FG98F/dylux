@@ -2103,6 +2103,34 @@ case 'bot':
     if(!value) return m.reply(msg.notext)
     Fg.sendMessage(from, value, text)
     break
+    
+                    case 'slot':
+                    case 'lucky':
+                    poin = 1000
+                    dpoin = 100
+                    let sotoy = ['🍊 : 🍒 : 🍐','🍒 : 🔔 : 🍊','🍇 : 🍒 : 🍐','🍊 : 🍋 : 🔔','🔔 : 🍒 : 🍐','🔔 : 🍒 : 🍊','🍊 : 🍋 : 🔔','🍐 : 🍒 : 🍋','🍐 : 🍐 : 🍐','🍊 : 🍒 : 🍒','🔔 : 🔔 : 🍇','🍌 : 🍒 : 🔔','🍐 : 🔔 : 🔔','🍊 : 🍋 : 🍒','🍋 : 🍋 : 🍌','🔔 : 🔔 : 🍇','🔔 : 🍐 : 🍇','🔔 : 🔔 : 🔔','🍒 : 🍒 : 🍒','🍌 : 🍌 : 🍌','🍇 : 🍇 : 🍇']
+                    let somtoy = pickRandom(sotoy)	
+                    let somtoyy = pickRandom(sotoy)	
+                    let somtoyyy = pickRandom(sotoy)	
+                    if (somtoyy  == '🍌 : 🍌 : 🍌') {
+	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | GANASTE 🎉 *${pushname}* \n\n*Obtienes*\n▢ *+${poin} Coins💰*`)
+                    await addPoin(sender, poin)
+	     	        } else if (somtoyy == '🍒 : 🍒 : 🍒') {
+	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | GANASTE 🎉 *${pushname}*\n\n*Obtienes*\n▢ *+${poin} Coins💰*`)
+                    await addPoin(sender, poin)
+	     	        } else if (somtoyy == '🔔 : 🔔 : 🔔') {
+	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | GANASTE 🎉 *${pushname}*\n\n*Obtienes*\n▢ *+${poin} Coins💰*`)
+                    await addPoin(sender, poin)
+	     	        } else if (somtoyy == '🍐 : 🍐 : 🍐') {
+	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | GANASTE 🎉 *${pushname}* \n\n*Obtienes*\n▢ *+${poin} Coins💰*`)
+                    await addPoin(sender, poin)
+	     	        } else if (somtoyy == '🍇 : 🍇 : 🍇') {
+	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | GANASTE 🎉 *${pushname}*\n\n*Obtienes*\n▢ *+${poin} Coins💰*`)
+                    await addPoin(sender, poin)
+	     	        } else {
+	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | Perdiste *${pushname}*\n\n Se descontará  *-${dpoin}* de XP`)
+                    await delPoin(sender, dpoin)
+	     	        }break
 
 //---
   default:
