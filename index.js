@@ -2128,7 +2128,7 @@ case 'bot':
 	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | GANASTE 🎉 *${pushname}*\n\n*Obtienes*\n▢ *+${poin} Coins💰*`)
                     await addPoin(sender, poin)
 	     	        } else {
-	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | Perdiste *${pushname}*\n\n Se descontará  *-${dpoin}* de XP`)
+	     	        m.reply(` 🎰 | *SLOTS* \n-----------------\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n-----------------\n 🎰 | Perdiste *${pushname}*\n\n Se descontará  *-${dpoin}* Coins💰`)
                     await delPoin(sender, dpoin)
 	     	        }break
 
