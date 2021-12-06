@@ -265,7 +265,7 @@ exports.timeout = '⏳ Time out the answer is ';
 exports.salah = '*❎ Wrong* !\nTry again';
 exports.hampir = '✳️ *A little more* !\nTry again';
 exports.benar = (value, value2) => {
-  return `✅ *Right*\nThe answer is ${value}\nyou get ${value2}`;
+  return `✅ *Right*\nThe answer is ${value}\nyou get ${value2} Coins`;
 };
 
 // afk

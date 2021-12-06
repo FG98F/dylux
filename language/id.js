@@ -265,7 +265,7 @@ exports.timeout = '⏳ Waktu habis jawabannya adalah ';
 exports.salah = '❎ *Salah* !\nCoba lagi';
 exports.hampir = '✳️ *Dikit lagi* !\nCoba lagi';
 exports.benar = (value, value2) => {
-  return `✅ *Benar*\nJawabannya adalah ${value}\nKamu mendapatkan ${value2}`;
+  return `✅ *Benar*\nJawabannya adalah ${value}\nKamu mendapatkan ${value2} Coins`;
 };
 
 // afk

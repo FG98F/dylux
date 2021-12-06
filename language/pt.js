@@ -265,7 +265,7 @@ exports.timeout = '⏳ O tempo acabou, a resposta é ';
 exports.salah = '❎ *Incorreta* !\nTente novamente';
 exports.hampir = '*✳️ Você quase conseguiu* \nContinue tentando!';
 exports.benar = (value, value2) => {
-  return `✅ *Resposta correta!*\n\n‣ Ganhou : *${value2}*`;
+  return `✅ *Resposta correta!*\n\n‣ Ganhou : *${value2}* Coins`;
 };
 
 // afk
