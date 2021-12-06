@@ -57,10 +57,8 @@ Puedes abrir el idioma  [Aqui](https://github.com/FG98F/dylux-bot/tree/main/lang
 1). **PREPARAR**
 
 - **REST API**
+
 Primero necesita `APIKEY`, inicie sesión para obtener una apikey en este sitio [HUJAN API](http://hujanapi.xyz/login), después de iniciar sesión, tiene un límite de apikey gratuita durante 30 días. copiar apikey y pegar en `database/setting-bot.json` 
-
-La instalación es bastante simple, siga los pasos a continuación en la Aplicación **Termux**
-
 
 2). **CORRER**
 - **TERMUX**
