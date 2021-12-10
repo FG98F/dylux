@@ -56,7 +56,7 @@ Puedes abrir el idioma  [Aqui](https://github.com/FG98F/dylux-bot/tree/main/lang
 
 - **REST API**
 
-Primero necesita `APIKEY`, inicie sesión para obtener una apikey en este sitio [HUJAN API](http://hujanapi.xyz/login), después de iniciar sesión, tiene un límite de apikey gratuita durante 30 días. copiar apikey y pegar en `database/setting-bot.json` 
+Primero necesita `APIKEY` Esto le sirve para poder usar el menú de comandos de voz, inicie sesión para obtener una apikey en este sitio [HUJAN API](http://hujanapi.xyz/login), después de iniciar sesión, tiene un límite de apikey gratuita durante 30 días. copiar apikey y pegar en `database/setting-bot.json` 
 
 2). **CORRER**
 - **TERMUX**
