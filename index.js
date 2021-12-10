@@ -2104,33 +2104,6 @@ case 'bot':
     Fg.sendMessage(from, value, text)
     break
     
-                    case 'slot':
-                    case 'lucky':
-                    poin = 1000
-                    dpoin = 100
-                    let sotoy = ['🍊 : 🍒 : 🍐','🍒 : 🔔 : 🍊','🍇 : 🍒 : 🍐','🍊 : 🍋 : 🔔','🔔 : 🍒 : 🍐','🔔 : 🍒 : 🍊','🍊 : 🍋 : 🔔','🍐 : 🍒 : 🍋','🍐 : 🍐 : 🍐','🍊 : 🍒 : 🍒','🔔 : 🔔 : 🍇','🍌 : 🍒 : 🔔','🍐 : 🔔 : 🔔','🍊 : 🍋 : 🍒','🍋 : 🍋 : 🍌','🔔 : 🔔 : 🍇','🔔 : 🍐 : 🍇','🔔 : 🔔 : 🔔','🍒 : 🍒 : 🍒','🍌 : 🍌 : 🍌','🍇 : 🍇 : 🍇']
-                    let somtoy = pickRandom(sotoy)	
-                    let somtoyy = pickRandom(sotoy)	
-                    let somtoyyy = pickRandom(sotoy)	
-                    if (somtoyy  == '🍌 : 🍌 : 🍌') {
-	     	        m.reply(` 🎰 | *SLOTS* \n───────\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n───────\n 🎰 | ${msg.gst} 🎉 *${pushname}* \n\n▢ 🎁 *+${poin} Coins💰*`)
-                    await addPoin(sender, poin)
-	     	        } else if (somtoyy == '🍒 : 🍒 : 🍒') {
-	     	        m.reply(` 🎰 | *SLOTS* \n───────\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n───────\n 🎰 | ${msg.gst} 🎉 *${pushname}*\n\n▢ 🎁 *+${poin} Coins💰*`)
-                    await addPoin(sender, poin)
-	     	        } else if (somtoyy == '🔔 : 🔔 : 🔔') {
-	     	        m.reply(` 🎰 | *SLOTS* \n───────\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n───────\n 🎰 | ${msg.gst} 🎉 *${pushname}*\n\n▢ 🎁 *+${poin} Coins💰*`)
-                    await addPoin(sender, poin)
-	     	        } else if (somtoyy == '🍐 : 🍐 : 🍐') {
-	     	        m.reply(` 🎰 | *SLOTS* \n───────\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n───────\n 🎰 | ${msg.gst} 🎉 *${pushname}*\n\n▢ 🎁 *+${poin} Coins💰*`)
-                    await addPoin(sender, poin)
-	     	        } else if (somtoyy == '🍇 : 🍇 : 🍇') {
-	     	        m.reply(` 🎰 | *SLOTS* \n───────\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n───────\n 🎰 | ${msg.gst} 🎉 *${pushname}*\n\n▢ 🎁 *+${poin} Coins💰*`)
-                    await addPoin(sender, poin)
-	     	        } else {
-	     	        m.reply(` 🎰 | *SLOTS* \n───────\n${somtoy}\n${somtoyy} ⬅️\n${somtoyyy}\n───────\n 🎰 | ${msg.pdt} *${pushname}*\n\n *-${dpoin}* Coins💰`)
-                    await delPoin(sender, dpoin)
-	     	        }break
 
 //---
   default:
