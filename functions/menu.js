@@ -62,6 +62,7 @@ exports.menu = (v) => {
 ▢ ${v}tiktok <link>
 ▢ ${v}tiktoknowm <link>
 ▢ ${v}tiktokaudio <link>
+▢ ${v}mediafire <link>
 └─────────────
 ┌─⊷ *TEXT MAKER*
 ▢ ${v}nameninja <text>
