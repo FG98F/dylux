@@ -344,6 +344,13 @@ Fg.on('CB:action,,battery', json => {
 	 const isQuotedDocument = type === 'extendedTextMessage' && content.includes('documentMessage');
 	 const isQuotedLocation = type === 'extendedTextMessage' && content.includes('locationMessage');
 	 const isQuotedextendedText = type === 'extendedTextMessage' && content.includes('extendedTextMessage');
+	
+	//---
+      const sendFileFromUrl = async(link, type, options) => {
+      hasil = await getBuffer(link)
+      Fg.sendMessage(from, hasil, type, options).catch(e => { fetch(link).then((hasil) => { Fg.sendMessage(from, hasil, type, options).catch(e => { Fg.sendMessage(from, { url : link }, type, options).catch(e => {
+      m.reply('⚠️ Error')
+      })})})})}
 
 // comando de registro de la consola cuando está en un chat privado
     if (!isGroup && isCmd) {
@@ -2103,6 +2110,20 @@ case 'bot':
     if(!value) return m.reply(msg.notext)
     Fg.sendMessage(from, value, text)
     break
+    
+    case 'mediafire':
+    case 'mfire':
+    if(!value) return m.reply(msg.nolink('Mediafire'));
+   if(!isUrl(args[0]) && !args[0].includes('mediafire')) m.reply('⚠️ Link invalido');
+mfir = await fgx.mfire(value)
+result = `   ≡ *MEDIAFIRE*
+
+▢ *${msg.nme}* : ${mfir[0].name}
+▢ *${msg.tamaño}* : ${mfir[0].size}
+▢ *Link* : ${mfir[0].link}`
+m.reply(result)
+sendFileFromUrl(mfir[0].link, document, {mimetype: mfir[0].mime, filename: mfir[0].name, quoted: mek})
+break
     
 
 //---
