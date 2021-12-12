@@ -28,6 +28,7 @@ const { pinterest } = require('./download/pinterest_img');
 const { igDl } = require('./download/instagramPost_dl');
 const { Ttdl } = require('./download/tiktokPost_dl');
 const { yta, ytv } = require('./download/yt_download');
+const { mfire } = require('./download/mediafire.js')
 // -- result search
 const { playstore } = require('./search/playstore');
 
@@ -48,5 +49,6 @@ module.exports = {
   igDl,
   Ttdl,
   yta,
-  ytv
+  ytv, 
+  mfire
 };
