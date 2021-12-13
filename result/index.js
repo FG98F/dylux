@@ -14,11 +14,11 @@ const _reto = readfile('./result/random/reto.json');
 
 // -- get results
 const verdad = () => {
- return pickRandom(_truth);
+ return pickRandom(_verdad);
 };
 
 const reto = () => {
- return pickRandom(_dare);
+ return pickRandom(_reto);
 };
 
 
