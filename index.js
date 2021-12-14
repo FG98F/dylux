@@ -544,7 +544,7 @@ case 'lang':
 case 'creator':
 case 'creador': 
 case 'developer':
-number = '59172945992@s.whatsapp.net'
+number = '543885839638@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
     capt += '▢ Instagram : https://www.instagram.com/fg98._'
     await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)
@@ -626,7 +626,7 @@ Fg.send2Button(from, teks, '*_© FG98 DyLux_*', `ꨄ︎ Apoyar`, `${prefix}donat
       hasil = fgx.reto()
       }
     capt = `‣ *${command.toUpperCase()}* \n\n${hasil}`
-    Fg.send2Button(from, capt, msg.foll, `VERDAD`, `${prefix}verdad`, `RETO`, `${prefix}reto`)
+    Fg.send2Button(from, capt, `▢ ${msg.foll}`, `VERDAD`, `${prefix}verdad`, `RETO`, `${prefix}reto`)
     break
     
     case 'fake':
@@ -801,7 +801,7 @@ case "s":
     Fg.sendMessage(from, await getBuffer(pin), image, { quoted: mek, caption: `✅ *${msg.resulf}*\n`, thumbnail: fakethumb })
  break 
 
-  case 'man':
+   case 'man':
     mann = ['hombre', 'man', 'joven guapo']
     push = pickRandom(mann)
     m.reply(msg.wait)
@@ -2115,6 +2115,7 @@ case 'bot':
     case 'mfire':
     if(!value) return m.reply(msg.nolink('Mediafire'));
    if(!isUrl(args[0]) && !args[0].includes('mediafire')) m.reply('⚠️ Link invalido');
+m.reply(msg.wait)
 mfir = await fgx.mfire(value)
 result = `   ≡ *MEDIAFIRE*
 
