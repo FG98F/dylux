@@ -549,17 +549,12 @@ case 'developer':
     capt += '▢ Instagram : https://www.instagram.com/fg98._'
     await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)*/
  
-   Fg.sendContact(from, '5493885839638', 'owner', {
+   Fg.sendContact(from, '5493885839638', 'FG98', {
 	 key: {
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
 	 { remoteJid: from } : {}) 
-                },
-	 message: { 
-		"extendedTextMessage": {
-                 "text":"Mi creador"
-                        }
-	                  }})
+                },mek})
     break
     
     case 'info':
