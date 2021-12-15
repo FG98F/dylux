@@ -544,11 +544,12 @@ case 'lang':
 case 'creator':
 case 'creador': 
 case 'developer':
-number = '5493885839638@s.whatsapp.net'
+/*number = '5493885839638@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
     capt += '▢ Instagram : https://www.instagram.com/fg98._'
-    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)
-   /* Fg.sendContact(from, '5493885839638', 'owner', {
+    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)*/
+ 
+   Fg.sendContact(from, '5493885839638', 'owner', {
 	 key: {
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
@@ -558,7 +559,7 @@ number = '5493885839638@s.whatsapp.net'
 		"extendedTextMessage": {
                  "text":"Mi creador"
                         }
-	                  }})*/
+	                  }})
     break
     
     case 'info':
