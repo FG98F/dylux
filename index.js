@@ -554,7 +554,7 @@ case 'developer':
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
 	 { remoteJid: from } : {}) 
-                },mek})
+                },quoted : mek})
     break
     
     case 'info':
