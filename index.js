@@ -548,7 +548,6 @@ case 'developer':
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
     capt += '▢ Instagram : https://www.instagram.com/fg98._'
     await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)*/
- 
    Fg.sendContact(from, '5493885839638', 'FG98', mek) 
     break
     
