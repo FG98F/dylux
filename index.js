@@ -1939,8 +1939,8 @@ case 'riddle':
     case 'update':
     case 'actualizar':
 if (!isOwner && !isBot) return m.reply(msg.owner)
-gfg = `git remote set-url origin https://github.com/FG98F/dylux-bot.git && git pull `
-exec(`${gfg}`, (err, stdout) => {
+//gfg = `git remote set-url origin https://github.com/FG98F/dylux-bot.git && git pull `
+exec(`git pull`, (err, stdout) => {
 if (err) return m.reply(err) 
 if (stdout) m.reply(`✅ ${msg.updatef} :\n\n${stdout}`)
 })
@@ -2115,7 +2115,6 @@ result = `   ≡ *MEDIAFIRE*
 m.reply(result)
 sendFileFromUrl(mfir[0].link, document, {mimetype: mfir[0].mime, filename: mfir[0].name, quoted: mek})
 break
-    
 
 //---
   default:
