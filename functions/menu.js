@@ -89,7 +89,7 @@ exports.menu = (v) => {
 └─────────────
 ┌─⊷ *ADMIN* 
 ▢ ${v}setwelcome
-▢ ${v}seybye
+▢ ${v}setbye
 ▢ ${v}delwelcome
 ▢ ${v}delbye
 ▢ ${v}simulate <welcome/bye>
