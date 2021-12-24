@@ -1116,7 +1116,7 @@ break
      buffer = await getBuffer(ttdl.result.watermark)
      if(!buffer) return m.reply('⚠️ Error')
      Fg.sendMessage(from, buffer, video, {quoted: mek, caption: msg.done})
-   }
+     }
    break
    
    case 'play': 
