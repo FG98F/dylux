@@ -11,7 +11,6 @@ exports.menu = (v) => {
 ▢ ${v}listprem
 ▢ ${v}listban
 ▢ ${v}chatbot on/off
-▢ ${v}voicecmd on/off
 └─────────────
 ≡ List Menu
 ┌─⊷ *FUN* 
