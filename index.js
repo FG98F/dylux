@@ -467,10 +467,10 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, `⦙☰ Menu Vc`, `${prefix}menuvc`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`,  '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
     break
     
-    case 'menuvc': 
+   /*case 'menuvc': 
  case 'helpvc':
     capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
     
@@ -483,7 +483,7 @@ ${readMore}
 ${menuVC} 
 `
     Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
-    break 
+    break*/
     
     case 'grupos': 
     case 'groups': 
@@ -1939,7 +1939,6 @@ case 'riddle':
     case 'update':
     case 'actualizar':
 if (!isOwner && !isBot) return m.reply(msg.owner)
-//gfg = `git remote set-url origin https://github.com/FG98F/dylux-bot.git && git pull `
 exec(`git pull`, (err, stdout) => {
 if (err) return m.reply(err) 
 if (stdout) m.reply(`✅ ${msg.updatef} :\n\n${stdout}`)
