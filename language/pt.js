@@ -89,12 +89,14 @@ exports.vclect = 'Leitura de voz';
 exports.listwb = 'Lista de evento';
 exports.pregt = 'Ela me ama?';
 exports.donate = `≡ *DOAÇÃO*
-você pode doar se quiser ajudar a manter o bot ativo
+Você pode apoiar o criador do bot doando :) 
 
 ▢ *PayPal*
 • *Link :* https://tinyurl.com/PayPal-fg
-
-_Doando você get_  *Premium* `;
+▢ *Mercado Pago Arg*
+• *Link :* https://mpago.la/1F3r6JH
+▢ *Tigo Money*
+• *Link :*  `;
 exports.cretb = 'Crie seu próprio bot usando Termux';
 
 // -- Decir tiempo

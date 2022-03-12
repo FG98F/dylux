@@ -89,12 +89,14 @@ exports.vclect = 'Membaca suara';
 exports.listwb = 'daftar acara';
 exports.pregt = 'Dia mencintaiku?';
 exports.donate = `≡ *SUMBANGAN*
-Anda dapat menyumbang jika Anda ingin membantu menjaga bot tetap aktif
+Anda dapat mendukung pembuat bot dengan berdonasi :) 
 
 ▢ *PayPal*
 • *Link :* https://tinyurl.com/PayPal-fg
-
-_Dengan berdonasi Anda mendapatkan_  *Premium* `;
+▢ *Mercado Pago Arg*
+• *Link :* https://mpago.la/1F3r6JH
+▢ *Tigo Money*
+• *Link :*  `;
 exports.cretb = 'Buat bot Anda sendiri menggunakan Termux';
 
 // -- Saying time

@@ -89,12 +89,14 @@ exports.vclect = 'Voice reading';
 exports.listwb = 'Event list';
 exports.pregt = 'She Loves Me?';
 exports.donate = `≡ *DONATION*
-you can donate if you want to help keep the bot active
+You can support the creator of the bot by donating :) 
 
 ▢ *PayPal*
 • *Link :* https://tinyurl.com/PayPal-fg
-
-_By donating you get_  *Premium* `;
+▢ *Mercado Pago Arg*
+• *Link :* https://mpago.la/1F3r6JH
+▢ *Tigo Money*
+• *Link :*  `;
 exports.cretb = 'Create your own bot using Termux';
 
 // -- Saying time
