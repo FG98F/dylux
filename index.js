@@ -492,13 +492,7 @@ ${menuVC}
 ≡  *DyLux  ┃ ᴮᴼᵀ*  GRUPOS
 
 ▢ ${msg.gp} 1
-https://chat.whatsapp.com/G5sXrkhJ0pb0Tu8nhWLaFK
-
-▢ ${msg.gp} 2
-https://chat.whatsapp.com/CDUqNRu5Kh5KY5uqQI0BKE
-
-▢ ${msg.gp} 3
-https://chat.whatsapp.com/FSVDTytQxnTIPx8t8wBWeM
+https://instabio.cc/fg98ff
 
 ▢ *YouTube*
 • https://www.youtube.com/fg98f
@@ -544,11 +538,24 @@ case 'lang':
 case 'creator':
 case 'creador': 
 case 'developer':
-/*number = '5493885839638@s.whatsapp.net'
-    capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
-    capt += '▢ Instagram : https://www.instagram.com/fg98._'
-    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)*/
-   Fg.sendContact(from, '5493885839638', 'FG98', mek) 
+   //Fg.sendContact(from, '5493885839638', 'FG98', mek) 
+   m.reply(`
+*≡ OWNER*
+
+▢ Instagram :
+  • https://instagram.com/fg98._
+▢ WhatsApp : 
+  • wa.me/
+▢ Telegram : 
+  • t.me/fg98f 
+  • t.me/fg98ff (canal)
+  • t.me/AndroidWorldfg (grupo)
+▢ Facebook : 
+  • https://facebook.com/fg98ff/
+  • https://facebook.com/fg98A/
+▢ YouTube : 
+  • https://youtube.com/fg98f
+`)
     break
     
     case 'info':
@@ -1281,8 +1288,7 @@ break
     if(!isGroup) return m.reply(msg.group)
     if(!isBotAdmins) return m.reply(msg.botadmin)
     code = await Fg.groupInviteCode(from)
-    fglink = `${msg.linkgp} *${groupName}*\n\nhttps://chat.whatsapp.com/${code}`
-    m.reply(fglink)
+    m.reply(`${msg.linkgp} *${groupName}*\n\nhttps://chat.whatsapp.com/${code}`) 
     break
     
 case 'resetlink': 
@@ -1293,12 +1299,11 @@ case 'anularlink':
     if(!isBotAdmins) return m.reply(msg.botadmin)
     Fg.query({ json: ['action', 'inviteReset', from], expect200: true })
 linkgp = await Fg.groupInviteCode(from)
-fgxd = `✅ ${msg.linkrevo}
+m.reply( `✅ ${msg.linkrevo}
 
 📌 ${msg.newlink} : 
-https://chat.whatsapp.com/${linkgp}`
-    m.reply(fgxd)
-    break
+https://chat.whatsapp.com/${linkgp}`) 
+ break
  
  case 'warn':
     if(!isGroup) return m.reply(msg.group)
@@ -1616,6 +1621,7 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
     
     case 'antilink':
     case 'antilinkwha':
+    case 'antilinkwa':
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
     if(!isBotAdmins) return m.reply(msg.botadmin)
@@ -1668,7 +1674,7 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
     }
     break 
     
-    case 'voicecommand':
+    /*case 'voicecommand':
     case 'voicecmd':
     if(!isPremium && !isOwner) return m.reply(msg.premium)
    // if(isGroup) return m.reply(msg.private)
@@ -1684,7 +1690,7 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
     } else {
       m.reply(msg.OnorOff)
     }
-    break
+    break*/
     
 
   case 'q': 
@@ -2115,7 +2121,7 @@ m.reply(result)
 sendFileFromUrl(mfir[0].link, document, {mimetype: mfir[0].mime, filename: mfir[0].name, quoted: mek})
 break
 
-//---
+//-------------------- FG98 ------------
   default:
   
     if (budy.startsWith('$')){
