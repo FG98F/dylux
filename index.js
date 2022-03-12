@@ -547,9 +547,9 @@ case 'developer':
 ▢ WhatsApp : 
   • wa.me/
 ▢ Telegram : 
-  • t.me/fg98f 
+  • t.me/fgsupp_bot 
   • t.me/fg98ff (canal)
-  • t.me/AndroidWorldfg (grupo)
+  • t.me/fgawgp (grupo)
 ▢ Facebook : 
   • https://facebook.com/fg98ff/
   • https://facebook.com/fg98A/
@@ -587,7 +587,7 @@ case 'developer':
 
 *≡ OWNER*
 ▢ Instagram : https://www.instagram.com/fg98._
-▢ WhatsApp : wa.me/59172945992 
+▢ WhatsApp : wa.me/
 
 *≡ SCRIPT*
 ▢ Git : ${package.homepage} 
