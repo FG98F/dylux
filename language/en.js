@@ -92,7 +92,7 @@ exports.donate = `≡ *DONATION*
 You can support the creator of the bot by donating :) 
 
 ▢ *PayPal*
-• *Link :* https://tinyurl.com/PayPal-fg
+• *Link :* https://paypal.me/fg98f
 ▢ *Mercado Pago Arg*
 • *Link :* https://mpago.la/1F3r6JH
 ▢ *Tigo Money*
