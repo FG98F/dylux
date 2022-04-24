@@ -2121,6 +2121,7 @@ m.reply(result)
 sendFileFromUrl(mfir[0].link, document, {mimetype: mfir[0].mime, filename: mfir[0].name, quoted: mek})
 break
 
+
 //-------------------- FG98 ------------
   default:
   
@@ -2262,8 +2263,8 @@ ${menu(prefix)}
 
 
 /**
- * url 1 = https://api.simsimi.net/v2/?text=${budy}&lc=id&cf=false
- * url 2 = https://api-sv2.simsimi.net/v2/?text=${budy}&lc=id&cf=false 
+ * url 1 = https://api.simsimi.net/v2/?text=${budy}&lc=es&cf=false
+ * url 2 = https://api-sv2.simsimi.net/v2/?text=${budy}&lc=es&cf=false 
  * chatbot // configúrelo como desee, elija uno si da un error
 */
 
