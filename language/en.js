@@ -96,7 +96,7 @@ You can support the creator of the bot by donating :)
 ▢ *Mercado Pago Arg*
 • *Link :* https://mpago.la/1F3r6JH
 ▢ *Tigo Money*
-• *Link :*  `;
+• *N° :*  78230727`;
 exports.cretb = 'Create your own bot using Termux';
 
 // -- Saying time
