@@ -1,7 +1,7 @@
 // voice command 
 exports.vnCmd = (v) => {
   return 'Usar comandos con notas de voz, activar con el comando ' + v + 'voicecommand on/off';
-};
+}; 
 
 // -- enviar mensaje 
 exports.wait = `*⌛ _Cargando..._ ▬▬▬▭*`;
